@@ -1,0 +1,14 @@
+2026-10-26T13:04:31.274Z REQUEST to=johnlestermacapanas3898@acdeducation.com subject=PCO Borrowing System: request APPROVED body=Your borrow request for 'item' is now: APPROVED.
+2026-10-26T13:04:35.347Z RESPONSE 250 2.0.0 OK  1793019875 d9443c01a7336-2ea9b1a5cf0sm16772285ad.52 - gsmtp accepted=johnlestermacapanas3898@acdeducation.com rejected=
+2026-10-26T13:04:48.048Z REQUEST to=johnlestermacapanas3898@acdeducation.com subject=PCO Borrowing System: request DENIED body=Your borrow request for 'item' is now: DENIED.
+2026-10-26T13:04:50.621Z RESPONSE 250 2.0.0 OK  1793019890 d9443c01a7336-2ea9acb8a19sm16926495ad.0 - gsmtp accepted=johnlestermacapanas3898@acdeducation.com rejected=
+2026-10-26T13:05:22.075Z REQUEST to=johnlestermacapanas3898@acdeducation.com subject=PCO Borrowing System: request APPROVED body=Your borrow request for 'item' is now: APPROVED.
+2026-10-26T13:05:24.482Z RESPONSE 250 2.0.0 OK  1793019924 d2e1a72fcca58-8a36c0fefa3sm1246252b3a.51 - gsmtp accepted=johnlestermacapanas3898@acdeducation.com rejected=
+2026-10-26T14:37:06.689Z REQUEST to=johnlestermacapanas3898@acdeducation.com subject=PCO Borrowing System: request APPROVED body=Your borrow request for 'item' is now: APPROVED.
+2026-10-26T14:37:10.346Z RESPONSE 250 2.0.0 OK  1793025430 5a478bee46e88-369ef6a71easm24311639eec.5 - gsmtp accepted=johnlestermacapanas3898@acdeducation.com rejected=
+2026-10-26T14:37:40.662Z REQUEST to=johnlestermacapanas3898@acdeducation.com subject=PCO Borrowing System: request RELEASED body=Your borrow request for 'Projector' is now: RELEASED. Please return it on or before: 2026-10-30.
+2026-10-26T14:37:43.249Z RESPONSE 250 2.0.0 OK  1793025463 a92af1059eb24-198a249c331sm52964588c88.17 - gsmtp accepted=johnlestermacapanas3898@acdeducation.com rejected=
+2026-10-26T14:37:45.988Z REQUEST to=johnlestermacapanas3898@acdeducation.com subject=PCO Borrowing System: request RELEASED body=Your borrow request for 'Projector' is now: RELEASED. Please return it on or before: 2026-10-30.
+2026-10-26T14:37:48.816Z REQUEST to=johnlestermacapanas3898@acdeducation.com subject=PCO Borrowing System: request RELEASED body=Your borrow request for 'Laptop' is now: RELEASED. Please return it on or before: 2026-10-30.
+2026-10-26T14:37:49.130Z RESPONSE 250 2.0.0 OK  1793025469 a92af1059eb24-19a3736d16fsm24523489c88.12 - gsmtp accepted=johnlestermacapanas3898@acdeducation.com rejected=
+2026-10-26T14:37:52.770Z RESPONSE 250 2.0.0 OK  1793025472 a92af1059eb24-198a0d98660sm28015699c88.9 - gsmtp accepted=johnlestermacapanas3898@acdeducation.com rejected=

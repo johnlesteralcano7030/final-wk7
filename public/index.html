@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCO Borrowing System</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Adding a clean font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- LOGIN SECTION -->
+    <div id="login-view" class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <h2>Property Custodian</h2>
+                <p>Borrowing & Inventory System</p>
+            </div>
+            <div class="login-form">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <button onclick="login()" class="btn-primary w-100">Sign In</button>
+                <p id="login-error" class="error"></p>
+            </div>
+            <div class="login-footer">
+                <small><strong>Test Accounts:</strong><br> 
+                admin / admin123 &nbsp;|&nbsp; depthead / head123 &nbsp;|&nbsp; faculty1 / faculty123</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN DASHBOARD -->
+    <div id="dashboard-view" class="hidden">
+        <!-- Top Navigation -->
+        <header class="top-nav">
+            <div class="nav-brand">
+                <h2>PCO System</h2>
+            </div>
+            <div class="nav-user">
+                <span id="welcome-text">Welcome</span>
+                <button onclick="logout()" class="btn-danger btn-sm">Logout</button>
+            </div>
+        </header>
+
+        <main class="dashboard-content">
+            
+            <!-- BORROWER VIEW -->
+            <div id="borrower-section" class="hidden role-section">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Available Inventory</h3>
+                    </div>
+                    <div class="table-responsive">
+                        <table id="items-table">
+                            <thead><tr><th>Item Name</th><th>Available Stock</th><th>Action</th></tr></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card mt-2">
+                    <div class="card-header">
+                        <h3>My Borrowing Requests</h3>
+                    </div>
+                    <div class="table-responsive">
+                        <table id="my-requests-table">
+                            <thead><tr><th>Item</th><th>Qty</th><th>Status</th><th>Due Date</th></tr></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DEPT HEAD VIEW -->
+            <div id="depthead-section" class="hidden role-section">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Pending Requests for Approval</h3>
+                    </div>
+                    <div class="table-responsive">
+                        <table id="head-requests-table">
+                            <thead><tr><th>ID</th><th>Borrower</th><th>Item</th><th>Qty</th><th>Action</th></tr></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ADMIN (PCO) VIEW -->
+            <div id="admin-section" class="hidden role-section">
+                <div class="card">
+                    <div class="card-header flex-between">
+                        <h3>Inventory Management</h3>
+                        <div class="add-item-form">
+                            <input type="text" id="new-item-name" placeholder="Item Name">
+                            <input type="number" id="new-item-qty" placeholder="Qty" style="width: 80px;">
+                            <button onclick="addItem()" class="btn-primary">Add Item</button>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table id="admin-items-table">
+                            <thead><tr><th>ID</th><th>Item</th><th>Total</th><th>Available</th></tr></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card mt-2">
+                    <div class="card-header">
+                        <h3>Request Management</h3>
+                    </div>
+                    <div class="table-responsive">
+                        <table id="admin-requests-table">
+                            <thead><tr><th>ID</th><th>Borrower</th><th>Item</th><th>Qty</th><th>Status</th><th>Action</th></tr></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card mt-2">
+                    <div class="card-header">
+                        <h3>System Audit Logs</h3>
+                    </div>
+                    <div class="table-responsive">
+                        <table id="logs-table">
+                            <thead><tr><th>Log ID</th><th>Req ID</th><th>Action</th><th>Performed By</th><th>Timestamp</th></tr></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
